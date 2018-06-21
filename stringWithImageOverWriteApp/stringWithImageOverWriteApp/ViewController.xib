@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="sampleImage" destination="L8C-mn-idm" id="h0r-al-NTb"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kzX-pc-44o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laputa_____castle_in_the_sky___by_williamdickeson-d4ci9wl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L8C-mn-idm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <gestureRecognizers/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="L8C-mn-idm" secondAttribute="trailing" id="0Pm-EW-xpw"/>
+                <constraint firstItem="L8C-mn-idm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="6lK-y6-dMx"/>
+                <constraint firstItem="L8C-mn-idm" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="VNT-m2-qUo"/>
+                <constraint firstItem="L8C-mn-idm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-20" id="nSD-bk-lP9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="bbn-iK-TI5" appends="YES" id="sY5-jK-EsL"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="bbn-iK-TI5">
+            <connections>
+                <action selector="touchImage:" destination="-1" id="p6y-S5-a3s"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="laputa_____castle_in_the_sky___by_williamdickeson-d4ci9wl.jpg" width="752" height="1063"/>
+    </resources>
+</document>
